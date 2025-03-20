@@ -1,6 +1,6 @@
 {
   "name": "antix-button",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A reusable button component with multiple variants and styles",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
