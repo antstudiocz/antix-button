@@ -1,89 +1,76 @@
-# Wix Button Component
+# Antix UI Component Library
 
-A reusable and customizable button component for React applications.
+Znovupoužitelná a přizpůsobitelná knihovna UI komponent pro React aplikace.
 
-## Installation
+## Instalace
 
 ```bash
-npm install antix-button
-# or
-yarn add antix-button
+npm install @antixuser/antix-ui
+# nebo
+yarn add @antixuser/antix-ui
 ```
 
-## Usage
+## Základní použití
 
 ```jsx
-import { Button } from "antix-button";
-import "antix-button/dist/index.css"; // Import styles if needed
+import { Button } from "@antixuser/antix-ui";
 
 function App() {
   return (
-    <Button
-      variant="solid"
-      color="primary"
-      size="md"
-      onClick={() => console.log("Button clicked!")}
-    >
-      Click Me
-    </Button>
+    <div>
+      <Button
+        variant="solid"
+        color="primary"
+        onClick={() => console.log("Button clicked!")}
+      >
+        Klikni na mě
+      </Button>
+    </div>
   );
 }
 ```
 
-Check the `examples` directory for these demos and more information on how to run them.
+## Dostupné komponenty
 
-## API
+Knihovna aktuálně obsahuje následující komponenty:
 
-The Button component accepts the following props:
+- **[Button](src/components/Button/docs/README.md)** - Tlačítko s různými variantami a styly
 
-| Prop           | Type                                     | Default      | Description                                          |
-| -------------- | ---------------------------------------- | ------------ | ---------------------------------------------------- |
-| variant        | 'solid' \| 'outlined' \| 'text'          | 'solid'      | Button style variant                                 |
-| color          | 'conversion' \| 'primary' \| 'secondary' | 'conversion' | Button color theme                                   |
-| size           | 'xl' \| 'lg' \| 'md' \| 'sm'             | 'md'         | Button size                                          |
-| icon           | ReactNode                                | undefined    | Icon to display within button                        |
-| iconPosition   | 'left' \| 'right'                        | 'left'       | Position of the icon                                 |
-| fullWidth      | boolean                                  | false        | Whether the button should take full width            |
-| className      | string                                   | ''           | Additional CSS class                                 |
-| additionalText | string                                   | undefined    | Additional text to display                           |
-| minContent     | boolean                                  | true         | Whether the button should have minimum content width |
-| disabled       | boolean                                  | false        | Whether the button is disabled                       |
+## Přizpůsobení
 
-The component also accepts all standard HTML button attributes.
+Knihovna používá CSS proměnné pro snadné přizpůsobení vzhledu. Více informací najdete v [dokumentaci stylů](src/styles/docs/README.md).
 
-## Customization
+## Příklady
 
-The component uses CSS variables for styling, which you can override in your application's CSS to customize the appearance:
+Ukázkové příklady použití komponent najdete v adresáři `examples/`.
 
-```css
-:root {
-  /* Font sizes */
-  --font-button1-size: 16px;
-  --font-button1-line-height: 24px;
-  --font-button2-size: 14px;
-  --font-button2-line-height: 20px;
-  --font-button3-size: 12px;
-  --font-button3-line-height: 16px;
+## Vývoj
 
-  /* Font families */
-  --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+### Struktura projektu
 
-  /* Colors */
-  --color-neutral-00: #ffffff;
+Projekt dodržuje následující strukturu:
 
-  --color-conversion-500: #e63d3d;
-  --color-conversion-900: #b21a1a;
-
-  --color-primary-500: #1c552c;
-  --color-primary-700: #0e3f1b;
-
-  --color-secondary-300: #f2ead8;
-
-  --color-highlight-300: #72ad59;
-}
+```
+src/
+  ├── components/     # Jednotlivé komponenty
+  │   ├── Component/  # Adresář komponenty
+  │   │   ├── Component.tsx              # Implementace komponenty
+  │   │   ├── Component.module.css       # Styly komponenty
+  │   │   ├── Component.module.css.d.ts  # TypeScript definice pro CSS modul
+  │   │   ├── index.ts                   # Export komponenty
+  │   │   └── docs/                      # Dokumentace komponenty
+  │   │       └── README.md              # Popis a příklady použití
+  ├── styles/         # Sdílené styly
+  │   ├── variables.css                  # CSS proměnné
+  │   └── docs/                          # Dokumentace stylů
+  └── types/          # Sdílené typy
+      └── common.ts                      # Společné TypeScript typy
 ```
 
-## License
+### Konvence
+
+Pro více informací o konvencích a pravidlech projektu se podívejte do [souboru s pravidly projektu](.cursor/rules/instructions.mdc).
+
+## Licence
 
 MIT

@@ -1,2 +1,2 @@
-export * from "./Button";
-export { default } from "./Button";
+// Export all components
+export * from "./components";

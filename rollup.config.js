@@ -3,6 +3,8 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
+import terser from "@rollup/plugin-terser";
+import url from "@rollup/plugin-url";
 
 import pkg from "./package.json";
 
@@ -37,5 +39,7 @@ export default {
       use: ["sass"],
       extract: false,
     }),
+    url(),
+    terser(),
   ],
 };

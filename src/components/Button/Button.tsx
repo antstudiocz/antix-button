@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes, ReactNode } from "react";
 import styles from "./Button.module.css";
-import "./variables.css";
+import "../../styles/variables.css";
 
 export type ButtonVariant = "solid" | "outlined" | "text";
 

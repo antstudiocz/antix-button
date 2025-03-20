@@ -1,0 +1,65 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Antix UI projektová pravidla a konvence
+globs: ["**/*.{ts,tsx,css,js,jsx}"]
+alwaysApply: true
+---
+
+# Antix UI - Projektová pravidla 📚
+
+## 🧱 Struktura projektu
+1. Každá komponenta musí být ve vlastním adresáři v `src/components/`
+2. Každá komponenta musí obsahovat:
+   - `Component.tsx` - implementace komponenty
+   - `Component.module.css` - styly komponenty
+   - `index.ts` - export komponenty
+3. Sdílené typy jsou v `src/types/`
+4. Sdílené styly jsou v `src/styles/`
+5. Vždy používat named a default exporty u komponent
+
+## 📝 Dokumentace
+1. Každá komponenta musí mít JSDoc komentář s popisem
+2. Všechny props musí být zdokumentovány včetně jejich typů a výchozích hodnot
+3. Aktualizovat README.md při přidání nové komponenty
+4. Přidat příklady použití do `examples/` adresáře
+
+## 🎨 Styling
+1. Používat CSS moduly pro izolaci stylů
+2. Dodržovat jednotnou strukturu CSS proměnných
+3. Používat responzivní design pro všechny komponenty
+4. Dodržovat přístupnost (WCAG standardy)
+
+## 🧪 Testování
+1. Každá komponenta musí mít jednotkové testy
+2. Coverage musí být minimálně 80%
+3. Používat snapshot testy pro zachycení vizuálních regresí
+
+## 🚀 Workflow
+1. Před commitem spustit lint a testy
+2. Dodržovat sémantické verzování
+3. Dokumentovat všechny breaking changes
+4. Udržovat deklarativní kód s funkcionalitou oddělenou od prezentace
+
+## 📦 Vydávání verzí
+1. Aktualizovat CHANGELOG.md při každé nové verzi
+2. Používat konvence pro verzování: patch (0.0.x) pro opravy, minor (0.x.0) pro nové featury, major (x.0.0) pro breaking changes
+
+## 🔄 Refactoring
+1. Při refaktoringu zachovat zpětnou kompatibilitu nebo označit jako breaking change
+2. Dokumentovat důvody refaktoringu
+
+## 🌱 Konvence pojmenování
+1. Komponenty: PascalCase
+2. Funkce a proměnné: camelCase
+3. Konstanty: UPPER_SNAKE_CASE
+4. Typy a interface: PascalCase, prefixovat I pro interface (IButtonProps)
+5. CSS třídy: kebab-case
+
+## ⚙️ Konfigurace komponent
+1. Používat defaultProps pro výchozí hodnoty
+2. Props validace pomocí TypeScript typů
+3. Komplexní komponenty rozdělit na menší, znovupoužitelné části
