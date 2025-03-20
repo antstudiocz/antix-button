@@ -26,6 +26,8 @@ alwaysApply: true
 2. Všechny props musí být zdokumentovány včetně jejich typů a výchozích hodnot
 3. Aktualizovat README.md při přidání nové komponenty
 4. Přidat příklady použití do `examples/` adresáře
+5. Po každé úpravě kódu aktualizovat všechny relevantní README soubory
+6. Při vydání minor nebo major verze připravit novou sekci v CHANGELOG.md se seznamem změn
 
 ## 🎨 Styling
 1. Používat CSS moduly pro izolaci stylů
@@ -47,6 +49,7 @@ alwaysApply: true
 ## 📦 Vydávání verzí
 1. Aktualizovat CHANGELOG.md při každé nové verzi
 2. Používat konvence pro verzování: patch (0.0.x) pro opravy, minor (0.x.0) pro nové featury, major (x.0.0) pro breaking changes
+3. Pro minor a major verze povinně vytvořit novou sekci v CHANGELOG.md s detailním popisem změn
 
 ## 🔄 Refactoring
 1. Při refaktoringu zachovat zpětnou kompatibilitu nebo označit jako breaking change
