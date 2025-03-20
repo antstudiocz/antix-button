@@ -42,7 +42,7 @@ Knihovna používá CSS proměnné pro snadné přizpůsobení vzhledu. Více in
 
 ## Příklady
 
-Ukázkové příklady použití komponent najdete v adresáři `examples/`.
+Ukázkové příklady použití komponent najdete v adresáři [`examples/`](examples).
 
 ## Vývoj
 
