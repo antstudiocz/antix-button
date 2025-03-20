@@ -56,7 +56,6 @@ src/
   │   ├── Component/  # Adresář komponenty
   │   │   ├── Component.tsx              # Implementace komponenty
   │   │   ├── Component.module.css       # Styly komponenty
-  │   │   ├── Component.module.css.d.ts  # TypeScript definice pro CSS modul
   │   │   ├── index.ts                   # Export komponenty
   │   │   └── docs/                      # Dokumentace komponenty
   │   │       └── README.md              # Popis a příklady použití
