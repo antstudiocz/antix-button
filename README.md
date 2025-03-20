@@ -71,14 +71,26 @@ src/
 Pro vydání nové verze knihovny máte k dispozici následující příkazy:
 
 ```bash
-# Standardní release - zvýšení patch verze, build, publikace na npm a push tagů do gitu
-npm run release
+# Standardní release - zvýšení patch verze (1.1.3 -> 1.1.4)
+npm run release:patch
+
+# Release s inkrementací minor verze (1.1.3 -> 1.2.0)
+npm run release:minor
+
+# Release s inkrementací major verze (1.1.3 -> 2.0.0)
+npm run release:major
 
 # Vytvoření GitHub release z aktuální verze
 npm run github-release
 
-# Kompletní proces - standardní release + vytvoření GitHub release
-npm run full-release
+# Kompletní proces - standardní release (patch) + vytvoření GitHub release
+npm run full-release:patch
+
+# Kompletní proces - minor release + vytvoření GitHub release
+npm run full-release:minor
+
+# Kompletní proces - major release + vytvoření GitHub release
+npm run full-release:major
 ```
 
 > **Poznámka:** Pro použití `github-release` nebo `full-release` je potřeba mít nainstalovaný GitHub CLI (`gh`) a být přihlášen pomocí `gh auth login`.
