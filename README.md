@@ -66,6 +66,23 @@ src/
       └── common.ts                      # Společné TypeScript typy
 ```
 
+### Vydávání nových verzí
+
+Pro vydání nové verze knihovny máte k dispozici následující příkazy:
+
+```bash
+# Standardní release - zvýšení patch verze, build, publikace na npm a push tagů do gitu
+npm run release
+
+# Vytvoření GitHub release z aktuální verze
+npm run github-release
+
+# Kompletní proces - standardní release + vytvoření GitHub release
+npm run full-release
+```
+
+> **Poznámka:** Pro použití `github-release` nebo `full-release` je potřeba mít nainstalovaný GitHub CLI (`gh`) a být přihlášen pomocí `gh auth login`.
+
 ### Konvence
 
 Pro více informací o konvencích a pravidlech projektu se podívejte do [souboru s pravidly projektu](.cursor/rules/instructions.mdc).
