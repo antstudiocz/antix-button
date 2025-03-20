@@ -1,5 +1,5 @@
 {
-  "name": "antix-button",
+  "name": "@antixcz/antix-button",
   "version": "1.0.5",
   "description": "A reusable button component with multiple variants and styles",
   "main": "dist/index.js",
@@ -35,6 +35,6 @@
     "react",
     "ui"
   ],
-  "author": "",
+  "author": "ANT",
   "license": "MIT"
 }
