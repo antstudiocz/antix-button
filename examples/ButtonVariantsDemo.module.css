@@ -1,0 +1,63 @@
+.demoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px dashed #9747ff;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.sectionTitle {
+  font-family: var(--font-secondary, "Montserrat", sans-serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Button Text Grid for text buttons section */
+.buttonTextGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Override global styles to make them look better in demo */
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Help our grid layout be more responsive */
+@media (max-width: 768px) {
+  .buttonTextGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
