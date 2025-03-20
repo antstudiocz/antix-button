@@ -60,13 +60,29 @@ The component uses CSS variables for styling, which you can override in your app
   /* Font sizes */
   --font-button1-size: 16px;
   --font-button1-line-height: 24px;
-  /* More variables can be found in the variables.css file */
+  --font-button2-size: 14px;
+  --font-button2-line-height: 20px;
+  --font-button3-size: 12px;
+  --font-button3-line-height: 16px;
+
+  /* Font families */
+  --font-secondary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* Colors */
+  --color-neutral-00: #ffffff;
+
+  --color-conversion-500: #e63d3d;
+  --color-conversion-900: #b21a1a;
+
+  --color-primary-500: #1c552c;
+  --color-primary-700: #0e3f1b;
+
+  --color-secondary-300: #f2ead8;
+
+  --color-highlight-300: #72ad59;
 }
 ```
-
-## Migration
-
-If you're migrating from the original internal Button component, please refer to the `MIGRATION.md` file for detailed instructions.
 
 ## License
 
