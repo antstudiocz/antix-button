@@ -4,9 +4,9 @@ Tato složka obsahuje ukázkové komponenty, které prezentují všechny možné
 
 ## Struktura příkladů
 
-- **Button/** - Ukázky všech variant tlačítek
-- **styles/** - Ukázky přizpůsobení vzhledu pomocí CSS proměnných
-- **ExamplesApp.tsx** - Hlavní aplikace, která sdružuje všechny příklady do jednoho rozhraní
+- **ButtonDemo/** - Ukázky všech variant tlačítek
+- **ThemeSwitcherDemo/** - Ukázky přizpůsobení vzhledu pomocí CSS proměnných
+- **LibraryDemo.tsx** - Hlavní aplikace, která sdružuje všechny příklady do jednoho rozhraní
 
 ## Jak spustit ukázky
 
@@ -15,10 +15,10 @@ Tato složka obsahuje ukázkové komponenty, které prezentují všechny možné
 Zkopírujte komponenty do vašeho React projektu a importujte je:
 
 ```jsx
-import ExamplesApp from "./path/to/examples/ExamplesApp";
+import LibraryDemo from "./path/to/examples/LibraryDemo";
 
 function App() {
-  return <ExamplesApp />;
+  return <LibraryDemo />;
 }
 ```
 
@@ -27,7 +27,7 @@ function App() {
 Každou ukázkovou komponentu můžete použít samostatně:
 
 ```jsx
-import ButtonVariantsDemo from "./path/to/examples/Button/ButtonVariantsDemo";
+import ButtonVariantsDemo from "./path/to/examples/ButtonDemo/ButtonVariantsDemo";
 
 function App() {
   return <ButtonVariantsDemo />;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ButtonVariantsDemo from "./Button/ButtonVariantsDemo";
-import CustomizationDemo from "./styles/CustomizationDemo";
+import ButtonVariantsDemo from "./ButtonDemo/ButtonVariantsDemo";
+import CustomizationDemo from "./ThemeSwitcherDemo/ThemeSwitcherDemo";
 import styles from "./ExamplesApp.module.css";
 
 /**
