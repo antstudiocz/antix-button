@@ -8,9 +8,15 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/antix-button.git"
+  },
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
