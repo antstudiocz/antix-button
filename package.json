@@ -18,7 +18,9 @@
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "prepare": "husky",
-    "release": "npm run build && npm version patch && npm publish && git push && git push --tags"
+    "release": "npm run build && npm version patch && npm publish && git push && git push --tags",
+    "github-release": "gh release create v$(node -p \"require('./package.json').version\") --generate-notes",
+    "full-release": "npm run release && npm run github-release"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
